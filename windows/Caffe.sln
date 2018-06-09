@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libcaffe", "libcaffe\libcaffe.vcxproj", "{A9ACEF83-7B63-4574-A554-89CE869EA141}"
 EndProject
@@ -40,17 +40,19 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "props", "props", "{632DD6E1-28DF-42F9-AD7F-1C1F2D38765C}"
 	ProjectSection(SolutionItems) = preProject
 		CommonSettings.props = CommonSettings.props
+		..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\extras\visual_studio_integration\MSBuildExtensions\CUDA 9.0.props = ..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\extras\visual_studio_integration\MSBuildExtensions\CUDA 9.0.props
+		..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\extras\visual_studio_integration\MSBuildExtensions\CUDA 9.0.targets = ..\..\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v9.0\extras\visual_studio_integration\MSBuildExtensions\CUDA 9.0.targets
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{E2EF4AB6-AB52-4777-9783-4669A0D61F80}"
 	ProjectSection(SolutionItems) = preProject
 		scripts\BinplaceCudaDependencies.cmd = scripts\BinplaceCudaDependencies.cmd
 		scripts\FixGFlagsNaming.cmd = scripts\FixGFlagsNaming.cmd
+		scripts\MatlabPostBuild.cmd = scripts\MatlabPostBuild.cmd
+		scripts\MatlabPreBuild.cmd = scripts\MatlabPreBuild.cmd
 		scripts\ProtoCompile.cmd = scripts\ProtoCompile.cmd
 		scripts\PythonPostBuild.cmd = scripts\PythonPostBuild.cmd
 		scripts\PythonPreBuild.cmd = scripts\PythonPreBuild.cmd
-		scripts\MatlabPostBuild.cmd = scripts\MatlabPostBuild.cmd
-		scripts\MatlabPreBuild.cmd = scripts\MatlabPreBuild.cmd
 	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "caffe.managed", "caffe.managed\caffe.managed.vcxproj", "{350020CA-75B9-425E-85CA-DD8CF8CFBA9B}"
@@ -142,5 +144,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CFFB8E20-14DE-4746-B554-C3AAECFDD879}
 	EndGlobalSection
 EndGlobal
